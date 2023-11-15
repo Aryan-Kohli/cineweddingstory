@@ -1,3 +1,4 @@
+
 *{
 margin: 0;
 padding: 0;
@@ -21,7 +22,6 @@ padding: 0;
     
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Dancing+Script:wght@500&family=Lora&family=PT+Serif:wght@700&display=swap');
 .aboutp1{
     color: wheat;
     margin-top: calc(0.1*100vh); 

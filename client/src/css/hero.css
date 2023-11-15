@@ -1,3 +1,4 @@
+
 .heromain{
     /* background-image: url('../pics/heroimg2.jpg'); */
     background-image: url('../pics/pic1.webp');
@@ -16,7 +17,6 @@
         animation-delay: calc(.2s * var(--i));
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Dancing+Script:wght@500&family=PT+Serif:wght@700&display=swap');
 
 .headhero {
     display: flex;
