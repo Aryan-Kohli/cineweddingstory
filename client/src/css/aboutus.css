@@ -1,0 +1,163 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+.aboutus{
+    /* height: 500px; */
+    margin-top: -5px;
+    background-color: rgb(5, 5, 5);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* padding-bottom: 200px; */
+}
+.aboutushead{
+    text-align: center;
+    color: white;
+    /* font-family: 'Dancing Script'; */
+}
+.aboutus h1{
+    font-family: 'Dancing Script';
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Dancing+Script:wght@500&family=Lora&family=PT+Serif:wght@700&display=swap');
+.aboutp1{
+    color: wheat;
+    margin-top: calc(0.1*100vh); 
+      /* animation: slideTop .5s ease forwards; */
+}
+.aboutp1 h1{
+    font-family: 'Lora' !important;
+    font-size: 2rem;
+}
+body{
+    user-select: none;
+}
+.aboutp1img{
+    margin-top: calc(0.1*100vh);
+    /* padding-bottom: 200px; */
+ width: calc(0.2*100vw);
+}
+
+.aboutp2{
+    color: wheat;
+    margin-top: calc(0.1*100vh); 
+        /* animation-delay: calc(.2s * var(--i)); */
+}
+.aboutp2 h1{
+    font-family: 'Dancing Script';
+    /* font-family: 'Lora' !important; */
+    font-size: 1.9rem;
+}
+.aboutp2img{
+    margin-top: calc(0.1*100vh);
+    /* padding-bottom: 200px; */
+ width: calc(0.2*100vw);
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rhombus2 {
+    0% {
+        right: -40%;
+        opacity: 0;
+    }
+
+    100% {
+        right: -25%;
+        opacity: 1;
+    }
+}
+
+@keyframes car {
+    0% {
+        transform: translate(300px, -300px) scale(0) rotate(-45deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1) rotate(-45deg);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideSci {
+    0% {
+        transform: translateX(100px) rotate(45deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) rotate(45deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

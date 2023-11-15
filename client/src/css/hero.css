@@ -1,0 +1,108 @@
+.heromain{
+    /* background-image: url('../pics/heroimg2.jpg'); */
+    background-image: url('../pics/pic1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+            /* background-size: cover; */
+            /* background-attachment: fixed; */
+        background-attachment: scroll;
+        position: relative;
+
+    background-position-y: -85px;
+    height: 130vh;
+    /* height: 20vh; */
+    animation: slideTop .5s ease forwards;
+        animation-delay: calc(.2s * var(--i));
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Dancing+Script:wght@500&family=PT+Serif:wght@700&display=swap');
+
+.headhero {
+    display: flex;
+
+    justify-content: center;
+    /* Horizontally centers content */
+    align-items: center;
+    /* Vertically centers conten000t */
+    /* height: 100vh; */
+    padding-top: 65vh;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+    color:rgb(255, 255, 255);
+    /* font-family: 'PT Serif'; */
+    font-family: 'Dancing Script';
+    /* font-family: 'Agbalumo'; */
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    color: white;
+    font-size: 5rem;
+    animation: slideRight .5s ease forwards;
+    /* Example: full viewport height */
+}
+.headhero h1{
+/* font-family: 'Bebas Neue'; */
+
+
+}
+#heroch{
+    color: rgb(255, 255, 255)  !important     ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes rhombus2 {
+    0% {
+        right: -40%;
+        opacity: 0;
+    }
+
+    100% {
+        right: -25%;
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
