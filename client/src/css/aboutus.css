@@ -25,10 +25,11 @@ padding: 0;
 .aboutp1{
     color: wheat;
     margin-top: calc(0.1*100vh); 
-      /* animation: slideTop .5s ease forwards; */
+    /* animation: slideTop .5s ease forwards; */
 }
 .aboutp1 h1{
-    font-family: 'Lora' !important;
+    /* font-family: 'Dancing Script'; */
+    font-family: 'Agbalumo';
     font-size: 2rem;
 }
 body{
@@ -37,25 +38,57 @@ body{
 .aboutp1img{
     margin-top: calc(0.1*100vh);
     /* padding-bottom: 200px; */
- width: calc(0.2*100vw);
+    width: calc(0.2*100vw);
 }
 
 .aboutp2{
     color: wheat;
     margin-top: calc(0.1*100vh); 
-        /* animation-delay: calc(.2s * var(--i)); */
+    /* animation-delay: calc(.2s * var(--i)); */
 }
 .aboutp2 h1{
-    font-family: 'Dancing Script';
+    /* font-family: 'Dancing Script'; */
+    font-family: 'Lora';
     /* font-family: 'Lora' !important; */
+    font-size: 1.9rem;
+}
+.aboutp3{
+    color: wheat;
+    margin-top: calc(0.1*100vh); 
+    /* animation-delay: calc(.2s * var(--i)); */
+}
+.aboutp3 h1{
+    /* font-family: 'Dancing Script'; */
+    font-family: 'Lora';
+    /* font-family: 'Lora' !important; */
+    /* font-family: 'Bebas Neue'; */
+    font-size: 2.5rem;
+}
+.aboutp3 li{
+    /* font-family: 'Dancing Script'; */
+    font-family: 'Lora';
+    margin-top: 25px;
+        /* font-family: 'Agbalumo'; */
+    /* font-family: 'Lora' !important; */
+    /* font-family: 'Bebas Neue'; */
     font-size: 1.9rem;
 }
 .aboutp2img{
     margin-top: calc(0.1*100vh);
     /* padding-bottom: 200px; */
- width: calc(0.2*100vw);
+    width: calc(0.2*100vw);
 }
-
+#ourexp {
+    /* font-family: 'Agbalumo'; */
+    font-family: 'Dancing Script' !important;
+    font-size: 3rem;
+}
+#ourexp2 h1 {
+    /* font-family: 'Agbalumo'; */
+    font-family: 'Dancing Script' !important;
+    font-size: 3rem;
+    color: wheat;
+}
 
 
 

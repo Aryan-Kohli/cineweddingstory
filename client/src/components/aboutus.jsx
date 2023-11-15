@@ -31,7 +31,7 @@ export default function aboutus() {
             <img src={pic2} className="aboutp2img" />
           </div>
           <div className="col-md-8  aboutp2">
-            <h1>Our Expertise</h1>
+            <h1 id="ourexp">Our Expertise</h1>
             <h1>
               At Cine Wedding Story , we specialize in encapsulating the essence
               of various occasions, spanning a wide array of events including
@@ -43,9 +43,9 @@ export default function aboutus() {
           </div>
         </div>
         <div className="row">
-          <div className="col aboutp2">
-            <h1>Why Choose Us ?</h1>
-            <h1>
+          <div className="col aboutp3">
+            <h1 id="ourexp2">Why Choose Us ?</h1>
+            <h1 className="">
               <ul>
                 <li>
                   25+ Years of Experience: Our extensive experience speaks
