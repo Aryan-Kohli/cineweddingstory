@@ -41,7 +41,10 @@ function Navbar() {
           </a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <a
+            href="https://www.instagram.com/cineweddingstoryofficial/"
+            className="nav__link"
+          >
             <i className="bx bxl-instagram" />
           </a>
         </li>
