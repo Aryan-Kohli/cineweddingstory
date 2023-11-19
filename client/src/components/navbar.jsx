@@ -1,41 +1,58 @@
-import React from "react";
-import "../css/navbar.css";
-export default function navbar() {
-  const iconStyle = {
-    color: "black",
+import React, { useState } from "react";
+import "../css/navbar2.css";
+
+function Navbar() {
+  const [active, setActive] = useState("nav__menu");
+  const [icon, setIcon] = useState("nav__toggler");
+  const navToggle = () => {
+    if (active === "nav__menu") {
+      setActive("nav__menu nav__active");
+    } else setActive("nav__menu");
+
+    // Icon Toggler
+    if (icon === "nav__toggler") {
+      setIcon("nav__toggler toggle");
+    } else setIcon("nav__toggler");
   };
   return (
-    <div className="indexpage">
-      <header className="header">
-        <a href="#" className="logo">
-          Cine Wedding Story
-        </a>
-        <nav className="navbar">
-          <a href="#" style={{ "--i": "1" }}>
+    <nav className="nav">
+      <a href="#" className="nav__brand">
+        CineWedding Story
+      </a>
+      <ul className={active}>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
             Home
           </a>
-          <a href="#aboutus" style={{ "--i": "3" }}>
-            AboutUs
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            About
           </a>
-          <a href="#t" style={{ "--i": "4" }}>
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
             Events
           </a>
-          <a href="#" style={{ "--i": "4" }}>
-            Contact Us
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            Contact us
           </a>
-        </nav>
-        <div className="social-media">
-          <a href="#" style={{ "--i": "1" }}>
-            <i className="bx bxl-twitter" />
-          </a>
-          <a href="#" style={{ "--i": "2" }}>
-            <i className="bx bxl-facebook" />
-          </a>
-          <a href="#" style={{ "--i": "3" }}>
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
             <i className="bx bxl-instagram" />
           </a>
-        </div>
-      </header>
-    </div>
+        </li>
+      </ul>
+      <div onClick={navToggle} className={icon}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
+    </nav>
   );
 }
+
+export default Navbar;
