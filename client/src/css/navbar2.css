@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 
-html {
+/* html {
     font-size: 62.5%;
-}
+} */
 
-body {
+/* body {
     font-size: 1.6rem;
-}
+} */
 
 li {
     list-style: none;
@@ -21,12 +21,15 @@ a {
     text-decoration: none;
     color: rgb(204, 204, 204);
 }
-
+.navbg{
+    background-color: rgb(4,4,4) !important;
+}
 .nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    font-size: 1.2rem;
     z-index: 1000;
     /* Adjust the z-index as needed */
     display: flex;
@@ -36,9 +39,10 @@ a {
     height: 8vh;
     background: transparent;
     /* Other styles */
+    animation: slideTop .5s ease forwards;
     /* ... */
 }
-.nav__link{
+.nav__item a{
     animation: slideTop .5s ease forwards;
 }
 @keyframes slideTop {

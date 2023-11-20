@@ -21,12 +21,29 @@
 @media (max-width: 480px) {
     .heromain {
 background-image: url('../pics/pic1_mobile.jpg');
-    }
+}
+ .heromain h1{
+  
+   font-size: 2rem;
+   
+   text-align: center;
+  
+
+ }
+ 
 }
 @media (min-width: 481px) and (max-width: 767px) {
     .heromain {
             background-image: url('../pics/pic1_lowtablet.jpg');
         }
+                .heromain h1 {
+        
+                    font-size: 2.5rem;
+        
+                    text-align: center;
+        
+        
+                }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
@@ -34,6 +51,15 @@ background-image: url('../pics/pic1_mobile.jpg');
     .heromain {
             background-image: url('../pics/pic1_ipad.jpg');
         }
+         .heromain h1 {
+    
+             font-size: 3rem;
+    
+             text-align: center;
+    
+    
+         }
+        
 }
 
 .headhero {
@@ -58,7 +84,7 @@ background-image: url('../pics/pic1_mobile.jpg');
     font-weight: 500;
     font-display: swap;
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     animation: slideRight .5s ease forwards;
     /* Example: full viewport height */
 }

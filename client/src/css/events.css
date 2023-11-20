@@ -1,0 +1,11 @@
+.events .container{
+    width: 70%;
+    margin-top: calc(0.1*100vh);
+        padding-inline: calc(0.05*100vw);
+}
+.eventshead h1{
+    
+    color: blue;
+    font-size: 5rem;
+    font-family: 'Calligraffitti', cursive;
+}

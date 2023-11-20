@@ -1,7 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/navbar2.css";
 import logo from "../pics/logo.jpg";
 function Navbar() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [navbarBackground, setNavbarBackground] = useState(" nav ");
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const scrollThreshold = 800;
+    if (scrollPosition > scrollThreshold) {
+      setNavbarBackground(" nav navbg ");
+      // setNavbarBackground("black");
+    } else {
+      setNavbarBackground(" nav ");
+    }
+  }, [scrollPosition]);
+
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
   const navToggle = () => {
@@ -15,7 +40,7 @@ function Navbar() {
     } else setIcon("nav__toggler");
   };
   return (
-    <nav className="nav">
+    <nav className={navbarBackground}>
       <a href="#" className="nav__brand">
         CineWedding Story
       </a>
@@ -40,14 +65,14 @@ function Navbar() {
             Contact us
           </a>
         </li>
-        <li className="nav__item">
+        {/* <li className="nav__item">
           <a
             href="https://www.instagram.com/cineweddingstoryofficial/"
             className="nav__link"
           >
             <i className="bx bxl-instagram" />
           </a>
-        </li>
+        </li> */}
       </ul>
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>
