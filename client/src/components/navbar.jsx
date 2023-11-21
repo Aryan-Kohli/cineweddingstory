@@ -57,7 +57,7 @@ function Navbar() {
         </li>
         <li className="nav__item">
           <a href="#" className="nav__link">
-            Events
+            Gallery
           </a>
         </li>
         <li className="nav__item">

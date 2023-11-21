@@ -15,7 +15,7 @@ export default function aboutus() {
                 <img src={pic2} className="aboutimg" />
               </div>
             </div>
-            <div className="row">
+            <div className="row mt-4">
               <div className="col">
                 <img src={pic3} className="aboutimg" />
               </div>
@@ -82,7 +82,7 @@ export default function aboutus() {
                 <img src={pic4} className="aboutimg" />
               </div>
             </div>
-            <div className="row">
+            <div className="row mt-4">
               <div className="col">
                 <img src={pic5} className="aboutimg" />
               </div>
