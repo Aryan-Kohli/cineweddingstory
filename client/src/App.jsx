@@ -1,18 +1,16 @@
 import { useState } from "react";
 import "./App.css";
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Aboutus from "./components/aboutus";
-import Events from "./components/events";
-
+import { Route, Routes } from "react-router-dom";
+import Indexpage from "./pages/indexpage.jsx";
+import Adminpage from "./pages/adminpage.jsx";
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Aboutus />
-      <Events />
-    </>
+    <div>
+      <Routes>
+        <Route element={<Indexpage />} path="/" />
+        <Route element={<Adminpage />} path="/admin" />
+      </Routes>
+    </div>
   );
 }
 
