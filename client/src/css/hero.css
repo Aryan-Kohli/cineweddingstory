@@ -97,7 +97,12 @@ background-image: url('../pics/pic1_mobile.jpg');
     color: rgb(255, 255, 255)  !important     ;
 }
 
-
+.picss2{
+    background: url("../pics/pcbg.jpeg");
+    height: 600px;
+    background-repeat:no-repeat ;
+    background-size: contain;
+}
 
 
 

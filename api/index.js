@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
+const Router = express.Router();
 const dotenv = require('dotenv');
 const Img = require("./models/imgmodel");
 const cors = require('cors');
@@ -15,7 +16,25 @@ app.post('/upload',async (req,resp)=>{
     resp.json(Imgdoc);
 })
 
+app.delete('/delete_img/:imageId', async (req, res) => {
+  const imageId = req.params.imageId; // Extract imageId from URL params
 
+  try {
+    // Find the image by ID in your Img model and remove it
+    const deletedImage = await Img.findByIdAndDelete(imageId);
+
+    if (!deletedImage) {
+      console.log("Image not found");
+      return res.status(404).json({ message: 'Image not found' });
+    }
+
+    // If successfully deleted, send a success response
+    return res.status(200).json({ message: 'Image deleted successfully' });
+  } catch (error) {
+    console.error('Error deleting image:', error);
+    return res.status(500).json({ message: 'Internal server error' });
+  }
+});
 app.get('/getalldata', async (req, res) => {
   try {
     // Fetch all data from your collection using your Mongoose model

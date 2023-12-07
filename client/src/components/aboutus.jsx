@@ -4,6 +4,7 @@ import pic2 from "../pics/pic2.webp";
 import pic3 from "../pics/pic3.webp";
 import pic4 from "../pics/pic4.webp";
 import pic5 from "../pics/pic5.jpg";
+import pic6 from "../pics/pcbg.jpeg";
 export default function aboutus() {
   return (
     <div className=" mt-4">

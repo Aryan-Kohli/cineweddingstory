@@ -1,0 +1,29 @@
+.password-form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.red-text
+{
+        font-family: 'Calligraffitti', cursive;
+}
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #eeff00;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}

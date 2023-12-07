@@ -64,7 +64,7 @@ const Events = () => {
                     <div className="col-md-6 mb-3" key={item.id}>
                       <img
                         src={item.link}
-                        className="img1"
+                        className="img-responsive img1"
                         alt={`Image ${item.id}`}
                       />
                       {console.log("image link: ", item.link)}
